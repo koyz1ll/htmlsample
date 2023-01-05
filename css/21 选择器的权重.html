@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /**
+        权重（从高到低）：
+            !important 10000
+            内联样式 1000
+            id选择器 100
+            类和伪类选择器 10
+            元素选择器 1
+        **/
+        div{
+            background-color: yellow;
+        }
+        .red{
+            background-color: red;
+        }
+        #box1{
+            background-color: blue;
+        }
+        div,p,span{
+            background-color: yellowgreen;
+        }
+        .yellow{
+            background-color:yellow !important;/**慎用 !important**/
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="red yellow" style="background:blueviolet">我是一个div</div>
+</body>
+</html>
