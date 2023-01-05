@@ -1,0 +1,11 @@
+.zhang{
+    font-style: italic;
+}
+.cun{
+    font-weight: bold;
+    font-size: 30px;
+    font-family:"楷体";
+}
+.lin{
+    font:normal normal 50px "楷体";
+}

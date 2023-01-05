@@ -1,0 +1,13 @@
+/* 后代元素选择器 */
+.box h2{
+    color: blue;
+}
+/* 子元素选择器 */
+.box1 > h2{
+    color: blue;
+}
+/* 相邻元素选择器 */
+.box2+p{
+    color: blue;
+    text-decoration: line-through;
+}

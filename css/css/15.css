@@ -1,0 +1,14 @@
+.box ul{
+    /* list-style-type: disc;去除列表 */
+}
+.box ul li{
+    border:1px solid #f00;
+    height: 35px;
+    line-height: 35px;
+    list-style-position: inside;
+    list-style-type: none;
+    list-style-image: url(../images/me.jpg);/*将列表前面的项目符号设置为一张图片*/
+}
+.box1 ul{
+    list-style: none inside url(../images/me.jpg);
+}

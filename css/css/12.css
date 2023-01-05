@@ -1,0 +1,30 @@
+.title{
+    text-align: center;
+    font:normal normal 50px "黑体"
+}
+.tt{
+    color: #763B36;
+    font-size: 30px;
+}
+.first{
+    font-size: 15px;
+
+}
+.second{
+    font-size: 15px;
+    color: blue;
+}
+.third{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "黑体";
+}
+.zhang{
+    color: green;
+    font-size: 40px;
+}
+.xin{
+    color: blueviolet;
+    font-size: 30px;
+    font-style: italic;
+}

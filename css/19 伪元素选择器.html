@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 50px;
+            color: brown;
+        }
+        p::first-line{
+            background-color: yellow;
+        }
+        p::selection{
+            background-color: greenyellow;
+        }
+        div::before{
+            content: 'abc1';
+            color:red;
+        }
+        div::after{
+            content: "haha";
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>Hello Hello How are you</div>
+    <p>
+        aaaaaaaaaaaaaaaa aaaaaaaaaaaaaaa a aaaaaaaaaaaaaaaaaa aaaaaaaaaa
+    </p>
+</body>
+</html>

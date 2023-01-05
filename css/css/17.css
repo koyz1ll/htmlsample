@@ -1,0 +1,29 @@
+/* 
+伪类（不存在的类） 
+- 用来描述一个元素的特殊状态
+    比如：第一个元素、被点击的元素、鼠标移入的元素
+- 伪类一般情况都使用:开头
+*/
+/* ul > li:nth-child(2n){
+    color: red;
+} */
+
+/* ul > li:first-child{
+    color: red;
+}
+
+ul > li:last-child{
+    color: red;
+}
+ul > li:first-of-type{
+    color: red;
+    border: 1px solid red;
+}
+
+ul > li:nth-of-type(2){
+    color: aqua;
+} */
+
+ul > li:not(:nth-of-type(3)) {
+    color: skyblue;
+}
