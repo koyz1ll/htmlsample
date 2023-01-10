@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 400px;
+            height: 200px;
+            background-color: #bfa;
+            
+            /* 
+                float 可以使一个元素向其父元素的左侧或右侧移动
+                 y元素设置浮动后 水平布局的等式便不需要强制成立
+                 元素设置浮动后，会完全从文档流中脱离，不再占用文档流的位置
+                 浮动元素上边是一个没有浮动的块元素，则浮动元素无法上移
+                 浮动元素不会超过上边的浮动元素
+             */
+             /* 不浮动 */
+             /* float: none; */
+             /* 向右浮动 */
+             float: left;
+        }
+        .box2{
+            width: 450px;
+            height: 200px;
+            background-color: orange;
+            float:left
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float:right
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
