@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css/reset.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #F9EBD3;
+        }
+
+        .left-nav {
+            width: 190px;
+            height: 450px;
+            padding: 10px 0;
+            background-color: white;
+            margin: 50px auto;
+        }
+
+        .left-nav .item{
+            height: 25px;
+            /* 想让子元素的文本垂直居中，只需要让父元素的height等于line-height */
+            line-height: 25px;
+            padding-left: 18px;
+            font-size: 12px;
+        }
+        .left-nav .item:hover{
+            background-color: #D7D9D6;
+        }
+
+        .item a{
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .item a:hover{
+            color: #c81623;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="left-nav">
+        <div class="item">
+            <a href="#">家用电器</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a> <span>/</span>
+            <a href="#">运营商</a> <span>/</span>
+            <a href="#">数码</a>
+        </div>
+    </nav>
+</body>
+
+</html>

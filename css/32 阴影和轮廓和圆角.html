@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin-bottom: 50px;
+
+            /* 阴影不影响布局 第三个是模糊半径*/
+            box-shadow:rgba(0, 0, 0, 0.3) 5px 5px 10px;
+
+            /* 轮廓 不影响盒子大小及任何布局 */
+            /* outline: 10px red solid; */
+            /* 轮廓 影响盒子大小 */
+            /* border: 10px red solid; */
+        }
+
+        .box1:hover{
+            outline: 10px red solid;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* 四个角 圆角 */
+            border-radius: 10px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <span>hello</span>
+</body>
+</html>
