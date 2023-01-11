@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .box1,.box2,.box3{
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+        }
+        .box1{
+            background-color: #bfa;
+        }
+        .box2{
+            background-color: orange;
+            /* 
+                定位(position)
+                    - 定位是一种更加高级的布局手段
+                    - 通过定位可以将元素拜访到界面的任意位置
+
+                    static;默认值 元素是静止的没有开启定位
+                    relative; 相对定位
+                    absolute; 绝对定位
+                    fixed;固定定位
+                    sticky;元素的粘滞定位
+            */
+            /* position: static; */
+
+            /* 
+                相对于自己的位置移动 
+                不会脱离文档流
+            */
+            position: relative;
+            left: 200px;
+            top: -200px;
+
+            
+            /* position: absolute; */
+
+            /* position: fixed; */
+
+            /* position: sticky;  */
+        }
+        .box3{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>
