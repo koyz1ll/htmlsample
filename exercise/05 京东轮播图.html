@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css/reset.css">
+    <style>
+        .container{
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .box{
+            position: absolute;
+        }
+
+        .box:nth-child(3){
+            z-index: 1;
+        }
+
+        .pointer{
+            position: absolute;
+            z-index: 10;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .pointer a{
+            float: left;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255,0.3);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .pointer a:hover{
+            background-color: rgb(255, 255, 255);
+            outline: 5px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <a href="javascript:;">
+                <img src="./images/lb1.png" alt="">
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="javascript:;">
+                <img src="./images/lb2.png" alt="">
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="javascript:;">
+                <img src="./images/lb3.png" alt="">
+            </a>
+        </div>
+
+        <div class="pointer">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+        
+    </div>
+</body>
+</html>

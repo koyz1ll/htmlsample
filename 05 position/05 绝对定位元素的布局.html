@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            position: relative;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: fixed;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            
+            /*
+                开启绝对定位后：
+                    margin left + border left + padding left + width +
+                    padding right + border right + margin right
+                    水平方向的布局等式 需要添加left和right两个值
+                    如果有auto 则调整auto，没有则设置right
+                    
+                    left 和right默认值是auto
+
+                    垂直方向布局的等式也必须要满足
+                        top+margin top/bottom + border top/bottom + padding top/bottom + width
+            */
+            top: 0;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        win
+    </div>
+</body>
+</html>
