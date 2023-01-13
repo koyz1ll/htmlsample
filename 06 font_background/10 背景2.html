@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 400px;
+            /* 
+                可以同时设置background-color和background-image 
+                background-color会成为图片的底色
+                如果背景图片的小于元素大小，则平铺
+
+                如果背景图片的大于元素大小，则一部分背景无法显示
+            */
+            background-color: #bfa;
+            background-image: url(../exercise/images/news.jpg);
+            background-repeat: no-repeat;
+            /* border: 10px red double; */
+            /* padding: 10px; */
+
+            /* 
+                设置背景的范围
+                    background-clip
+                        可选值:
+                            border-box，背景会出现在边框的下边
+                            padding-box
+                            context-box
+
+             */
+            /* background-origin:content-box; */
+            /* background-clip: content-box; */
+
+            /* background-position:center right; */
+            /* background-position: 50% 50%; */
+
+            /* 
+                background-size 设置图片大小
+             */
+            /* background-size:contain; */
+            /* background-size: 200px 200px; */
+            background-size:cover;
+            overflow: scroll;
+        }
+
+        .box2{
+            width: 300px;
+            height: 1000px;
+            background-color: orange;
+            background-image: url(../exercise/images/news.jpg);
+            background-attachment: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1
+        <div class="box2">2</div>
+        
+    </div>
+</body>
+</html>

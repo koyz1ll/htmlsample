@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 400px;
+            /* 
+                可以同时设置background-color和background-image 
+                background-color会成为图片的底色
+                如果背景图片的小于元素大小，则平铺
+
+                如果背景图片的大于元素大小，则一部分背景无法显示
+            */
+            background-color: #bfa;
+            background-image: url(../exercise/images/test.jpg);
+
+            background-repeat: no-repeat;
+
+            background-position:center right;
+            background-position: 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
