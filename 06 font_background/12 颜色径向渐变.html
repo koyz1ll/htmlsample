@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: #bfa;
+
+            /* 
+                radial-gradient 径向渐变 放射性的效果
+
+                默认情况下径向渐变的形状根据元素的形状来计算
+                正方形 圆形
+                长方形 椭圆形
+                    -也可以手动指定圆心的大小
+                    语法 radia-gradient(大小 at 位置，颜色 位置，颜色 位置，颜色 位置)
+                
+            */
+            background-image:radial-gradient(closet-side,orange, green);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+</body>
+</html>
