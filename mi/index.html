@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="short icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小米商城</title>
+    <title>元气银河</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./fa/css/all.css">
@@ -14,11 +14,11 @@
 </head>
 
 <body>
-
+    <!-- 顶部导航条 -->
     <div class="topbar-wrapper">
         <div class="topbar w clearfix">
             <ul class="service">
-                <li><a href="javascript:;">小米商城</a></li>
+                <li><a href="javascript:;">元气银河</a></li>
                 <li class="line">|</li>
                 <li><a href="javascript:;">MIUI</a></li>
                 <li class="line">|</li>
@@ -57,6 +57,9 @@
                     <a href="javascript:;">
                         <i class="fas fa-shopping-cart"></i>
                         购物车（0）
+                        <div class="shop-info">
+                            <span>购物车中还没有商品，赶紧选购吧！</span>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -68,6 +71,44 @@
                 <li class="line">|</li>
                 <li><a href="javascript:;">消息通知</a></li>
             </ul>
+        </div>
+    </div>
+
+    <div class="header-wrapper">
+        <div class="header w clearfix">
+            <!-- logo -->
+            <h1 class="logo" title="元气银河">
+                元气银河官网
+                <a class="home" href="/"></a>
+                <a class="mi" href="/"></a>
+            </h1>
+
+            <!-- 中间导航条 -->
+            <div class="nav-wrapper">
+                <ul class="nav clearfix">
+                    <li><a class="all-goods" href="#">全部商品</a></li>
+                    <li><a href="#">元气银河</a></li>
+                    <li><a href="#">分类1</a></li>
+                    <li><a href="#">分类2</a></li>
+                    <li><a href="#">分类3</a></li>
+                    <li><a href="#">分类4</a></li>
+                    <li><a href="#">分类5</a></li>
+                    <li><a href="#">分类6</a></li>
+                    <li><a href="#">分类7</a></li>
+                    <li><a href="#">分类8</a></li>
+
+                    <div class="goods-info"></div>
+                </ul>
+            </div>
+
+            <!-- 搜索框 -->
+            <div class="search-wrapper">
+                <form class="search" action="#">
+                    <input class="search-inp" type="text">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
         </div>
     </div>
 </body>
