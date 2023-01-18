@@ -109,7 +109,7 @@
    line-height: 100px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
    transition:height 0.3s;
-   z-index: 9999;
+   z-index: 99999;
  }
 
  .shop-info span{
@@ -199,11 +199,15 @@
    visibility: hidden;
 }
 
-.header .nav li{
+.nav > li{
    float: left;
 }
 
-.nav-wrapper li a{
+.all-goods-wrapper{
+   position: relative;
+}
+
+.nav li a{
    font-size: 16px;
    margin: 0 10px;
    padding: 20px 0px;
@@ -211,14 +215,48 @@
    /* background-color: red; */
 }
 
-.nav-wrapper li a:hover{
+.nav li a:hover{
    color: #ff6700;
+}
+
+/* 左侧导航条 */
+.left-menu{
+   height: 460px;
+   width: 234px;
+   padding: 20px 0;
+   background-color: rgba(0, 0, 0, 0.6);
+   position:absolute;
+   z-index: 999;
+   left: -120px;
+   line-height: 1;
+}
+
+ul.left-menu a{
+   padding: 0;
+   font-size: 14px;
+   display: block;
+   height: 42px;
+   line-height: 42px;
+   color: white;
+   padding: 0 30px;
+   margin: 0;
+}
+
+ul.left-menu a:hover{
+   color: white;
+   background-color: #ff6700;
+}
+
+.left-menu a i{
+   float: right;
+   font-size: 14px;
+   line-height: 42px;
 }
 
 .nav .goods-info{
    width: 100%;
    height: 0px;
-   /* background-color: #fba; */
+   background-color: white;
    position: absolute;
    left: 0;
    top: 100px;
@@ -289,4 +327,103 @@
    background-color: #FF7100;
    color: white;
    border: none;
+}
+
+.banner{
+   position: relative;
+   height: 460px;
+}
+.banner .img-list li{
+   position: absolute;
+}
+
+
+/* 设置banner */
+.banner img{
+   width: 1226px;
+   height: 460px;
+}
+
+.pointer{
+   position: absolute;
+   bottom: 22px;
+   right: 35px;
+}
+
+.pointer a{
+   float: left;
+   width: 12px;
+   height: 12px;
+   border: 3px #B3B5B2 solid;
+   border-radius: 50%;
+   background-color: #949794;
+   margin-left: 6px;
+}
+
+.pointer a:hover{
+   background-color: #EAF9F5;
+}
+
+.to-top{
+   position: fixed;
+   width: 26px;
+   height: 206px;
+   background-color: orange;
+   /* border: 1px solid #616161; */
+   border-left: none;
+   bottom: 100px;
+   z-index: 99999;
+   bottom: 340px;
+   right: 50%;
+   margin-right: -639px;
+}
+
+
+.ad .shortcut{
+   margin-top: 20px;
+   width: 234px;
+   height: 170px;
+   background-color: #60574E;
+   padding-left: 4px;
+   float: left;
+}
+
+.ad .shortcut li{
+   float: left;
+}
+
+.ad .shortcut li a{
+   text-align: center;
+   width: 76px;
+   height: 84px;
+   line-height: 84px;
+   display: block;
+   color: #cfccca;
+   font-size: 12px;
+   background-color: #3A332E;
+   overflow: hidden;
+}
+
+.ad .shortcut li a:hover{
+   color: white;
+}
+
+.ad .bbb{
+   margin-top: 20px;
+}
+
+.ad .bbb li{
+   float: right;
+}
+
+.ad .bbb li a{
+   display: block;
+}
+
+.ad .bbb li a:hover{
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ad .bbb li a img{
+   height: 170px;
 }
