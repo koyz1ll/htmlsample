@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            perspective: 800px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 0 auto;
+            margin-top: 200px;
+            /* backface-visibility: hidden; 是否显示背面*
+            /* 
+                旋转
+             */
+            /* transition: 1s; */
+            animation: action 1s linear infinite;
+            /* transform: rotateY(0.6turn); */
+        }
+
+        html:hover .box1{
+            /* transform: rotateZ(1turn); */
+            /* transform: translateZ(100px) rotateX(89deg) ; */
+        }
+
+        @keyframes action{
+            0%{
+                transform:rotateY(0turn) ;
+            }
+            100%{
+                transform:rotateY(1turn) ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">你好</div>
+</body>
+</html>

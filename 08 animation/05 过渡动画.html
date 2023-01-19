@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .outer{
+            height: 500px;
+            border-bottom: 10px solid black;
+            overflow: hidden;
+        }
+        .outer div{
+            float: left;
+            width: 10vw;
+            height: 10vw;
+            border-radius:50%;
+            background-color: #bfa;
+            animation: ball 5s ease-in forwards infinite alternate-reverse;
+        }
+
+        .outer .box2{
+            background-color: orange;
+            animation-delay: 0.2s;
+        }
+
+        .outer .box3{
+            background-color: orange;
+            animation-delay: 0.3s;
+        }
+
+        .outer .box4{
+            background-color: salmon;
+            animation-delay: 0.4s;
+        }
+
+        .outer .box5{
+            background-color: seashell;
+            animation-delay: 0.5s;
+        }
+
+        .outer .box6{
+            background-color: skyblue;
+            animation-delay: 0.6s;
+        }
+
+        .outer .box7{
+            background-color: slategray;
+            animation-delay: 0.7s;
+        }
+
+        .outer .box8{
+            background-color: springgreen;
+            animation-delay: 0.8s;
+        }
+
+        .outer .box9{
+            background-color: brown;
+            animation-delay: 0.9s;
+        }
+
+        .outer .box10{
+            background-color: bisque;
+            animation-delay: 1s;
+        }
+
+        .outer .box2{
+            background-color: thistle;
+            animation-delay: 0.2s;
+        }
+        /* 下路动画 */
+        @keyframes ball {
+            from{
+                margin-top: 0;
+            }
+            10%{
+                margin-top: 400px;
+                animation-timing-function: ease-out;
+            }
+            20%{
+                margin-top: 100px;
+                animation-timing-function: ease-in;
+            }
+            30%{
+                margin-top: 400px;
+                animation-timing-function: ease-out;
+            }
+            40%{
+                margin-top: 150px;
+                animation-timing-function: ease-in;
+            }
+            50%{
+                margin-top: 400px;
+                animation-timing-function: ease-out;
+            }
+            60%{
+                margin-top: 200px;
+                animation-timing-function: ease-in;
+            }
+            70%{
+                margin-top: 400px;
+                animation-timing-function: ease-out;
+            }
+            80%{
+                margin-top: 250px;
+                animation-timing-function: ease-in;
+            }
+            to{
+                margin-top:400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div>
+    </div>
+</body>
+</html>

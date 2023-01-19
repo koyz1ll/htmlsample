@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .clock {
+            width: 500px;
+            height: 500px;
+            /* background-color: #bfa; */
+            margin: 100px auto;
+            border-radius: 50%;
+            /* border: solid black 10px; */
+            position: relative;
+            background-image: url(./images/clock.png);
+            background-size: cover;
+        }
+
+        .clock>div {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            /* background-color: #bfa; */
+        }
+
+        .hour-wrapper {
+            /* animation: run-hour 60s infinite linear; */
+            height: 50%;
+            width: 50%;
+            animation: run 720s infinite linear;
+        }
+
+        .hour {
+            height: 50%;
+            width: 6px;
+            background-color: #000;
+            margin: 0 auto;
+            border-radius: 3px;
+        }
+
+
+        .min-wrapper {
+            /* animation: run-hour 60s infinite linear; */
+            height: 60%;
+            width: 60%;
+            animation: run 60s infinite linear;
+            /* background-color: #bfa; */
+        }
+
+        .min {
+            height: 50%;
+            width: 4px;
+            background-color: #000;
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        .sec-wrapper {
+            /* animation: run 60s infinite steps(60); */
+            animation: run 1s infinite linear;
+            height: 75%;
+            width: 75%;
+            /* background-color: #bfa; */
+        }
+
+        .sec {
+            height: 50%;
+            width: 2px;
+            background-color: #f00;
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        @keyframes run{
+            0%{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <div class="hour-wrapper">
+            <div class="hour"></div>
+        </div>
+
+        <div class="min-wrapper">
+            <div class="min"></div>
+        </div>
+
+        <div class="sec-wrapper">
+            <div class="sec"></div>
+        </div>
+    </div>
+</body>
+
+</html>
