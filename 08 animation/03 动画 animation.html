@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+            background-color: silver;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+        }
+
+        .box2{
+            background-color: #bfa;
+            /* animation
+                name 动画名字
+                duration 持续事件
+                timing-function 移动动画
+                delay 延迟
+                iteration-count 迭代次数/执行次数 
+                    -infinite 无限重复
+                direction 方向 
+                    -normal 正常 
+                    -reverse 反向
+                    -alternate 循环
+                    -alternate-reverse 反向循环
+                fill-mode 动画填充模式
+                    -none 动画执行完毕 元素回到原来的位置
+                    -forwards 动画执行完毕，元素停在动画结束的位置
+                    -backwards 动画延迟等待时，元素就会处于开始位置
+                    -both 具备backwards和forwards
+             */
+            /* animation-direction:alternate-reverse; */
+            /* animation: action 2s ease-in 0s infinite alternate; */
+            animation:action 2s none;
+            animation-delay: 2s;
+            animation-fill-mode: backwards;
+
+
+            /* 
+                设置动画的执行状态
+                running 播放
+                paused 动画暂停
+             */
+            /* animation-play-state: paused; */
+        }
+
+        .box1:hover div{
+            /* animation-play-state: running; */
+        }
+
+        @keyframes action{
+            /* 0%{
+                margin-left: 100px;
+            }
+            50%{
+                margin-left: 200px;
+            }
+            100%{
+                margin-left: 700px;
+            } */
+            from{
+                margin-left: 0%;
+                background-color: orange;
+            }
+            to{
+                margin-left: 100%;
+                background-color: red;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

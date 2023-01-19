@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+            background-color: silver;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+        }
+
+        .box2{
+            background-color: #bfa;
+
+            /* 大部分属性都支持transition */
+            /* transition-property: height width; */
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: linear;
+        }
+
+        .box1:hover .box2,
+        .box1:hover .box3,
+        .box1:hover .box4{
+            /* width: 200px; */
+            /* height: 200px; */
+            /* animation: action 3s; */
+            margin-left: 700px;
+        }
+
+        .box3{
+            background-color: orange;
+
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(.24,0.95,.82,-0.88);
+        }
+
+        .box4{
+            background-color: salmon;
+
+            transition-property: all;
+            transition-duration: 3s;
+            /* transition-timing-function: steps(2,start); */
+            /* 延迟 */
+            transition-delay: 2s;
+
+            transition: ease-in 2s 3s ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>

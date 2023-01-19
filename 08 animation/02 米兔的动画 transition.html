@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box1{
+            height: 271px;
+            width: 132px;
+            margin: 0 auto;
+            background-image: url(images/mite.png);
+            background-position: 0 0;
+            transition: 0.3s steps(3);
+        }
+
+        .box1:hover{
+            background-position: -396px 0;
+        } */
+        .box1{
+            height: 271px;
+            width: 132px;
+            margin: 0 auto;
+            background-image: url(images/mite.png);
+            background-position: 0px 0px;
+            animation: run 0.3s infinite steps(4);
+        }
+
+        @keyframes run{
+            from{
+                background-position: 0px 0px;
+            }
+            to{
+                background-position: -528px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
