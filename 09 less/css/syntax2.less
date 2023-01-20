@@ -1,0 +1,89 @@
+.box1{
+    .box2{
+        color:red;
+    }
+
+    >.box3{
+        color: red;;
+        &:hover{
+            color: red;
+        }
+    }
+    
+    &:hover{
+        color:orange;
+    }
+}
+
+.p1{
+    width: 100px;
+    height: 100px;
+}
+
+//extend() 继承
+.p2:extend(.p1){
+    color: red;
+}
+
+.p3{
+    //mixin 混合，
+    .p1;
+    color: orange;
+}
+
+// 添加括号，表示不是了个类选择器，实际上就是一个mixins
+.p4(){
+    width: 100px;
+    height: 100px;
+    background-color: #bfa;
+}
+
+.p5{
+    .p4;
+}
+
+.test(@w,@h,@color){
+    width: @w;
+    height: @h;
+    border: 1px solid @color;
+}
+
+div{
+    
+}
+
+.div2{
+    
+}
+
+.box1{
+    //混合函数 按顺序传递
+    .test(300px, 200px, red);
+
+    .test(@color:red,@h:150px, @w:300px);
+}
+.box2{
+    .test(200px,150px,orange)
+}
+.box3{
+    .test(600px, 100px, blue);
+}
+
+span{
+    font-size: average(red, orange);
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color:#bfa;
+    transition: all 2s;
+    &:hover{
+        background-color: darken(#bfa, 5%);
+    }
+}

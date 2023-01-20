@@ -1,0 +1,38 @@
+.box1{
+    background-color: #bfa;
+
+    .box2{
+        background-color: red;
+    }
+
+    .box3{
+        background-color: #ff0;
+    }
+}
+// 变量@+变量名：变量值
+@b:#bfa;
+@a:100px;
+.box5{
+    width: @a;
+    color: @b;
+}
+
+@box:box5x;
+
+.@{box}{
+    width: @a;
+    background-image: url("@{a}/1.png");
+}
+
+@d:200px;
+@d:400px;
+
+div{
+    width: @d;
+}
+
+div{
+    width: 300px;
+    height: $width;
+}
+

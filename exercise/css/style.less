@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@design-width: 750;
+.w{
+    width: (639/40rem);
+    margin: 0 auto;
+}
+html{
+    //设置rem的比值
+    font-size: (100vw / @design-width) * 40;
+    background-color: #eff0f4;
+}
+
+.top-bar:extend(.w){
+    display: flex;
+    height: (175/40rem);
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+        line-height: 100%;
+    }
+
+    a{
+        color: #24253d;
+        font-size: (50 / 40rem);
+
+        i{
+            color: #999;
+            font-size: (40 /40rem);
+        }
+    }
+}
+
+.banner:extend(.w){
+    img{
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+.menu:extend(.w){
+    // background-color: #bfa;
+
+    height: (329/40rem);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-content:space-around;
+    a{
+        width: (300/40rem);
+        height: (104/40rem);
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        font-size: 1rem;
+        &:nth-child(1){
+            background-color: #FF7E56;
+        }
+        &:nth-child(2){
+            background-color: #D381FF;
+        }
+        &:nth-child(3){
+            background-color: #FF5070;
+        }
+        &:nth-child(4){
+            background-color: #0AB4FF;
+        }
+    }
+}
+
+.course-list:extend(.w){
+    // background-color: #bfa;
+    height: (400/40rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: (46/40rem);
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // background-color: #D381FF;
+        h2{
+            color: #24253d;
+            font-weight: normal;
+            border-left: (2/40rem) solid #0AB4FF;
+            font-size: (33/40rem);
+            padding-left: (20/40rem)
+        }
+        a{
+            font-size: (28/40rem);
+            color: #656565;
+        }
+    }
+    
+    .item-list{
+        // background-color: red;
+        // height: (320/40rem);
+        // height: (334/40rem);
+        display: flex;
+        flex:none;
+        overflow: auto;
+
+        .item{
+            width: (320/40rem);
+            height: (324/40rem);
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 0px (22/40rem);
+            margin: (10/40rem);
+            margin-right: (24/40rem);
+            
+            .cover{
+                // margin: 0px (20/40rem);
+                // overflow: hidden;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-evenly;
+                height: 100%;
+                
+                img{
+                    width: 100%;
+                    vertical-align: top;
+                    
+                }
+                h3{
+                    font-weight: normal;
+                    font-size: (28/40rem);
+                    color:#24253d
+                }
+
+                .user-info{
+                    display: flex;
+                    align-items: center;
+                    .avator{
+                        width: (42/40rem);
+                        img{
+                            display: block;
+                            margin: auto auto;
+                        }
+                    }
+                    .nickname{
+                        margin-left: (20/40rem);
+                        font-size: (24/40rem);
+                        color: #969393;
+                    }
+                }
+            }
+        }
+    }
+}

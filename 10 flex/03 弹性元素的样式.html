@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul{
+            margin: 0 auto;
+            width: 800px;
+            box-sizing: border-box;
+            border:10px solid red;
+            display: flex;
+        }
+
+        li{
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            background-color: forestgreen;
+            font-size: 50px;
+            text-align: center;
+
+            /* 弹性的增长系数*/
+            /* flex-grow: 1; */
+
+            flex-shrink: 1;
+            /* 
+                flex-basis 指定元素在主轴上的基础长度
+            */
+            flex-basis: 100px;
+
+            /* 
+                flex
+                设置弹性元素所有的样式
+                felx 增长 缩减  基础
+            */
+            flex:  1 1 auto;
+        }
+
+        li:nth-child(1){
+            /* flex-grow: 1; */
+        }
+
+        li:nth-child(2){
+            background-color: orange;
+            
+        }
+        li:nth-child(3){
+            background-color: palegoldenrod;
+            /* flex-grow: 3; */
+        }
+    </style>
+</head>
+<body>
+
+     <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+     </ul>
+</body>
+</html>
